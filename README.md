@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# -Minesweeper-Game-React-JavaScript
+ Functional Minesweeper clone with custom game logic, dynamic UI  rendering, and responsive design.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 🧩 Minesweeper (React)
 
-## Available Scripts
+This project was developed for the Scripting Languages course (2023/2024).
+The goal was to recreate the classic Minesweeper game with some unique features, using React, JavaScript, HTML, and CSS.
 
-In the project directory, you can run:
+👨‍💻 Authors
 
-### `npm start`
+João Pedro Cardoso
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Miguel Cardoso 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Duarte Batista 
 
-### `npm test`
+🕹️ Project Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Minesweeper is a logic and strategy game where the player must uncover all non-mined cells on a grid without detonating any mines.
 
-### `npm run build`
+This project demonstrates the team’s skills in web programming with React, focusing on functional components, interactivity, and clean design.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+⚙️ Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+JavaScript (ES6+)
 
-### `npm run eject`
+HTML5
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+CSS3
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧱 Component Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application is composed of three main components:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Component	Description
+Board	Main navigation bar and game board container
+BoardHead	Header displaying game info such as difficulty, timer, flags, and reset button
+Cell	Individual cell component representing each tile on the board
+🎮 Game Modes
 
-## Learn More
+Below the game title in the header, players can select the desired difficulty level:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Mode	Board Size
+Beginner	9 × 9
+Intermediate	16 × 16
+Expert	30 × 16
+🧠 Game Rules & Interactions
+🖱️ Left Click
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Reveals the selected cell.
 
-### Code Splitting
+If the cell contains adjacent mines → displays the number.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If the cell has no nearby mines → automatically opens neighboring cells.
 
-### Analyzing the Bundle Size
+If the cell contains a mine → the game ends (loss).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🖱️ Right Click
 
-### Making a Progressive Web App
+Marks the cell with a flag (🚩) if available.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Second click → replaces the flag with a question mark (?).
 
-### Advanced Configuration
+Third click → resets the cell to its original hidden state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🏆 Win & Lose Conditions
 
-### Deployment
+Win: All non-mined cells are uncovered.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Lose: A mined cell is clicked.
 
-### `npm run build` fails to minify
+The game displays alerts to indicate victory or defeat.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⚠️ Challenges Faced
+
+During development, the team encountered a few challenges:
+
+Reset Button: Difficulty in correctly resetting the board according to the selected difficulty level.
+
+Adjacent Cell Logic: Implementing the recursive logic to correctly reveal surrounding cells.
+
+🚀 How to Run
+
+Clone the repository:
+
+git clone https://github.com/your-username/minesweeper-react.git
+
+
+Navigate to the project folder:
+
+cd minesweeper-react
+
+
+Install dependencies:
+
+npm install
+
+
+Run the development server:
+
+npm start
+
+
+Open your browser and visit:
+
+http://localhost:3000
+
+📄 License
+
+This project was developed solely for academic purposes as part of the Scripting Languages course (IPL – 2023/2024).
