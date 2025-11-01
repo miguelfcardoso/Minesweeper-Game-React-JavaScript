@@ -1,0 +1,46 @@
+.board-head{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.reset{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+
+}
+
+.reset:hover{
+    cursor: pointer;
+}
+
+.mode-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modo_jogo{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.modo_jogo:hover{
+   cursor: pointer;
+
+}

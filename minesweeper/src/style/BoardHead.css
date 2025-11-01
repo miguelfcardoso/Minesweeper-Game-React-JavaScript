@@ -1,0 +1,73 @@
+.board-head{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.reset{
+    background-color: rgb(182, 5, 5);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.reset:hover{
+    cursor: pointer;
+}
+
+.mode-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modo_jogo{
+    background: #d0d0d0;
+    color: #000000;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+    width: fit-content;
+    height: fit-content;
+    transition: all 0.2s ease;
+}
+
+.modo_jogo:hover{
+   cursor: pointer;
+   box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+.modo_jogo:active {
+    box-shadow: 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE,inset 0 0 5px 3px #999;
+}
+  
+.modo_jogo:focus {
+    box-shadow: 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999;
+}
+
+.timer{
+    font-family: "Courier New",monospace;
+    font-weight: 700;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    border-top: solid 2px #7b7b7b;
+    border-left: solid 2px #7b7b7b;
+    background: #333;
+    color: rgb(255, 0, 0);
+    padding: 2px;
+}
+
+.flag-count{
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+    width: fit-content;
+    height: fit-content;
+}
