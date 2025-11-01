@@ -109,4 +109,4 @@ http://localhost:3000
 
 📄 License
 
-This project was developed solely for academic purposes as part of the Scripting Languages course (IPL – 2023/2024).
+This project was developed solely for academic purposes as part of the Scripting Languages course (LS – 2023/2024).
